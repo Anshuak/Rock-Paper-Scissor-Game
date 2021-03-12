@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h1>ROCK, PAPER AND SCISSOR GAME</h1>
+        <p>Let See If u can beat AI</p>
+    </div>
+
+    <div class="scorecard">
+        <div class="round" value='1'>Round <span id='round'>1</span> </div>
+        <div class="human_score">
+            <div class="score_name"><label>WIN</label>
+                <p id="human_points">0</p>
+            </div>
+            <div class="score_name"><label>TIE</label>
+                <p id="tie">0</p>
+            </div>
+            <div class="score_name"><label>WIN</label>
+                <p id="ai_points">0</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box-1" id='box-1'></div>
+        <div class="box-3">
+            <p>Rules:</p>
+            <p>BEST OF 10 GAME
+            </p>
+            <p>1. <span class="color-text">Rock</span> can be defeated by <span class="color-text">Paper</span> only</p>
+            <p>2. <span class="color-text">Paper</span> can be defeated by <span class="color-text">Scissor</span> only</p>
+            <p>3. <span class="color-text">Scissor</span> can be defeated by <span class="color-text">Rock</span> only</p>
+
+        </div>
+        <div class="box-2" id='box-2'></div>
+    </div>
+
+    <div class="choose">
+        <button onclick="showResult(this.value)" id='rock' value='rock'><i class="far fa-hand-rock"></i></button>
+        <button onclick="showResult(this.value)" id='paper' value='paper'><i class="far fa-hand-paper"></i></button>
+        <button onclick="showResult(this.value)" id='scissor' value='scissor'><i class="far fa-hand-scissors"></i></button>
+    </div>
+    <footer>Developed By Anshu Kailash</footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
